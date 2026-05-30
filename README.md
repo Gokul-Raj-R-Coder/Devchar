@@ -1,20 +1,25 @@
 # DevChar
 
-**Conversational Q&A for your codebase — without leaving your editor.**
+**The read-only AI coding agent. Ask anything. Nothing gets touched.**
 
-Stop copy-pasting code into ChatGPT every time you have a question. DevChar adds a `/chat` command to Claude Code, Cursor, and Gemini CLI that lets you ask questions about your codebase in plain English, with full context awareness, in read-only mode.
 
----
-
-## The problem
-
-AI coding agents are built to *do things* — write code, run commands, edit files. That makes developers hesitant to ask exploratory questions like "why does this exist?" or "what will break if I change this?" because the agent might act on it.
-
-DevChar solves this by adding a dedicated, stateless, read-only Q&A mode. Ask anything. Nothing gets touched.
+Stop copy-pasting code into ChatGPT every time you have a question. DevChar adds a dedicated, stateless `/chat` command to your favorite AI agents (Claude Code, Cursor, Gemini CLI). It lets you interrogate your codebase in plain English, with full context awareness, and zero risk of the AI breaking your files.
 
 ---
 
-## Install
+## Why DevChar?
+
+AI coding agents are built to *do things*—write code, run commands, edit files. That makes developers hesitate to ask exploratory questions like *"why does this exist?"* or *"what will break if I change this?"* because the agent might act on it. 
+
+DevChar is the antidote. 
+
+* **Absolute Transparency:** Read-only mode means zero risk. Ask anything; your files remain untouched.
+* **Zero-Setup & Terminal Native:** No PTY wrappers, no Node.js scripts, no vector databases. Just native `grep` and `find` feeding precise context to your LLM.
+* **Fixes Cursor's Container Amnesia:** Bypasses Cursor's dev-container indexing failures entirely by relying on native shell commands for file discovery.
+
+---
+
+## Install in 10 Seconds
 
 ```bash
 # Global install (works across all projects)
